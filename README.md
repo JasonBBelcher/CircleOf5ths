@@ -1,7 +1,10 @@
 # CircleOf5ths
 
-This is a simple tool to quickly find a key signature 
+This is a simple tool to quickly find a key signature or chord progression
 to work with when starting a new song. 
+
+
+
 
 ### TO DO 
 

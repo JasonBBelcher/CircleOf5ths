@@ -1194,7 +1194,11 @@
     border-radius: 100px 100px 100px 100px;
     font: normal normal normal normal 16px / normal 'Times New Roman';
         }
-       
+       p {
+           font-size: 6pt; 
+           color: white;
+           text-align: center; 
+       }
 
 
     
@@ -1206,6 +1210,7 @@
            
            
            function loadSounds() {
+               // load Key of C
                createjs.Sound.registerSound("./audio/KeyC/Cmaj.mp3", "Cmaj");
                createjs.Sound.registerSound("./audio/KeyC/Dmin.mp3", "Dmin");
                createjs.Sound.registerSound("./audio/KeyC/Emin.mp3", "Emin");
@@ -1213,7 +1218,22 @@
                createjs.Sound.registerSound("./audio/KeyC/Gmaj.mp3", "Gmaj");
                createjs.Sound.registerSound("./audio/KeyC/Amin.mp3", "Amin");
                createjs.Sound.registerSound("./audio/KeyC/Bdim.mp3", "Bdim");
-               
+               // load Key of G 
+               createjs.Sound.registerSound("./audio/KeyG/Gmaj_KeyG.mp3", "Gmaj_KeyG");
+               createjs.Sound.registerSound("./audio/KeyG/Amin_keyG.mp3", "Amin_keyG");
+               createjs.Sound.registerSound("./audio/KeyG/Bmin_keyG.mp3", "Bmin_keyG");
+               createjs.Sound.registerSound("./audio/KeyG/Cmaj_keyG.mp3", "Cmaj_keyG");
+               createjs.Sound.registerSound("./audio/KeyG/Dmaj_keyG.mp3", "Dmaj_keyG");
+               createjs.Sound.registerSound("./audio/KeyG/Emin_keyG.mp3", "Emin_keyG");
+               createjs.Sound.registerSound("./audio/KeyG/F%23dim_keyG.mp3", "F#dim_keyG");
+               // load Key of D
+               createjs.Sound.registerSound("./audio/KeyD/Dmaj.mp3", "Dmaj_keyD");
+               createjs.Sound.registerSound("./audio/KeyD/Emin_KeyD.mp3", "Emin_keyD");
+               createjs.Sound.registerSound("./audio/KeyD/F%23min_KeyD.mp3", "F#min_keyD");
+               createjs.Sound.registerSound("./audio/KeyD/Gmaj_KeyD.mp3", "Gmaj_keyD");
+               createjs.Sound.registerSound("./audio/KeyD/Amaj_KeyD.mp3", "Amaj_keyD");
+               createjs.Sound.registerSound("./audio/KeyD/Bmin_KeyD.mp3", "Bmin_keyD");
+               createjs.Sound.registerSound("./audio/KeyD/C%23dim_KeyD.mp3", "C#dim_keyD");
            }
            
            function playSound(id) {
@@ -1245,11 +1265,14 @@
 	<div id="DIV_9">
 	</div>
 	<div onclick="playSound('Bdim')" id="DIV_10">
-	</div>
-	<div id="DIV_11">
-	</div>
-	<div id="DIV_12">
-	</div>
+	<p>Bdim</p>
+    </div>
+	<div onclick="playSound('F#dim_keyG')" id="DIV_11">
+	<p>F#dim</p>
+    </div>
+	<div onclick="playSound('C#dim_keyD')" id="DIV_12">
+	<p>C#dim</p>
+    </div>
 	<div id="DIV_13">
 	</div>
 	<div id="DIV_14">
@@ -1269,11 +1292,14 @@
 	<div id="DIV_21">
 	</div>
 	<div onclick="playSound('Amin')" id="DIV_22">
-	</div>
-	<div id="DIV_23">
-	</div>
-	<div id="DIV_24">
-	</div>
+	<p>am</p>
+    </div>
+	<div onclick="playSound('Emin_keyG')" id="DIV_23">
+	<p>em</p>
+    </div>
+	<div onclick="playSound('Bmin_keyD')" id="DIV_24">
+	<p>bm</p>
+    </div>
 	<div id="DIV_25">
 	</div>
 	<div id="DIV_26">
@@ -1293,11 +1319,14 @@
 	<div id="DIV_33">
 	</div>
 	<div onclick="playSound('Gmaj')" id="DIV_34">
-	</div>
-	<div id="DIV_35">
-	</div>
-	<div id="DIV_36">
-	</div>
+	<p>GM</p>
+    </div>
+	<div onclick="playSound('Dmaj_keyG')" id="DIV_35">
+	<p>DM</p>
+    </div>
+	<div onclick="playSound('Amaj_keyD')" id="DIV_36">
+	<p>AM</p>
+    </div>
 	<div id="DIV_37">
 	</div>
 	<div id="DIV_38">
@@ -1317,11 +1346,14 @@
 	<div id="DIV_45">
 	</div>
 	<div onclick="playSound('Fmaj')" id="DIV_46">
-	</div>
-	<div id="DIV_47">
-	</div>
-	<div id="DIV_48">
-	</div>
+	<p>FM</p>
+    </div>
+	<div onclick="playSound('Cmaj_keyG')" id="DIV_47">
+	<p>CM</p>
+    </div>
+	<div onclick="playSound('Gmaj_keyD')" id="DIV_48">
+	<p>GM</p>
+    </div>
 	<div id="DIV_49">
 	</div>
 	<div id="DIV_50">
@@ -1341,11 +1373,14 @@
 	<div id="DIV_57">
 	</div>
 	<div onclick="playSound('Emin')" id="DIV_58">
-	</div>
-	<div id="DIV_59">
-	</div>
-	<div id="DIV_60">
-	</div>
+	<p>em</p>
+    </div>
+	<div onclick="playSound('Bmin_keyG')" id="DIV_59">
+	<p>bm</p>
+    </div>
+	<div onclick="playSound('F#min_keyD')" id="DIV_60">
+	<p>f#m</p>
+    </div>
 	<div id="DIV_61">
 	</div>
 	<div id="DIV_62">
@@ -1365,11 +1400,14 @@
 	<div id="DIV_69">
 	</div>
 	<div onclick="playSound('Dmin')" id="DIV_70">
-	</div>
-	<div id="DIV_71">
-	</div>
-	<div id="DIV_72">
-	</div>
+	<p>dm</p>
+    </div>
+	<div onclick="playSound('Amin_keyG')" id="DIV_71">
+	<p>am</p>
+    </div>
+	<div onclick="playSound('Emin_keyD')" id="DIV_72">
+	<p>em</p>
+    </div>
 	<div id="DIV_73">
 	</div>
 	<div id="DIV_74">
@@ -1389,13 +1427,17 @@
 	<div id="DIV_81">
 	</div>
 	<div onclick="playSound('Cmaj')" id="DIV_82">
-	</div>
-	<div id="DIV_83">
-	</div>
-	<div id="DIV_84">
-	</div>
+	<p>CM</p>
+    </div>
+	<div onclick="playSound('Gmaj_KeyG')" id="DIV_83">
+	 <p>GM</p>
+    </div>
+	<div onclick="playSound('Dmaj_keyD')" id="DIV_84">
+	<p>DM</p>
+    </div>
 	<div id="DIV_85">
-	</div>
+	
+    </div>
 </div>
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
