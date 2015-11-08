@@ -1234,6 +1234,14 @@
                createjs.Sound.registerSound("./audio/KeyD/Amaj_KeyD.mp3", "Amaj_keyD");
                createjs.Sound.registerSound("./audio/KeyD/Bmin_KeyD.mp3", "Bmin_keyD");
                createjs.Sound.registerSound("./audio/KeyD/C%23dim_KeyD.mp3", "C#dim_keyD");
+               // load Key of A
+               createjs.Sound.registerSound("./audio/KeyA/Amaj_KeyA.mp3", "Amaj_KeyA");
+               createjs.Sound.registerSound("./audio/KeyA/Bmin_KeyA.mp3", "Bmin_KeyA");
+               createjs.Sound.registerSound("./audio/KeyA/C%23min_KeyA.mp3", "C#min_KeyA");
+               createjs.Sound.registerSound("./audio/KeyA/Dmaj_KeyA.mp3", "Dmaj_KeyA");
+               createjs.Sound.registerSound("./audio/KeyA/Emaj_KeyA.mp3", "Emaj_KeyA");
+               createjs.Sound.registerSound("./audio/KeyA/F%23min_KeyA.mp3", "F#min_KeyA");
+               createjs.Sound.registerSound("./audio/KeyA/G%23dim_KeyA.mp3", "G#dim_KeyA");
            }
            
            function playSound(id) {
@@ -1273,8 +1281,9 @@
 	<div onclick="playSound('C#dim_keyD')" id="DIV_12">
 	<p>C#dim</p>
     </div>
-	<div id="DIV_13">
-	</div>
+	<div onclick="playSound('G#dim_KeyA')" id="DIV_13">
+	<p>G#dim</p>
+    </div>
 	<div id="DIV_14">
 	</div>
 	<div id="DIV_15">
@@ -1300,8 +1309,9 @@
 	<div onclick="playSound('Bmin_keyD')" id="DIV_24">
 	<p>bm</p>
     </div>
-	<div id="DIV_25">
-	</div>
+	<div onclick="playSound('F#min_KeyA')" id="DIV_25">
+	<p>f#m</p>
+    </div>
 	<div id="DIV_26">
 	</div>
 	<div id="DIV_27">
@@ -1327,8 +1337,9 @@
 	<div onclick="playSound('Amaj_keyD')" id="DIV_36">
 	<p>AM</p>
     </div>
-	<div id="DIV_37">
-	</div>
+	<div onclick="playSound('Emaj_KeyA')" id="DIV_37">
+	<p>EM</p>
+    </div>
 	<div id="DIV_38">
 	</div>
 	<div id="DIV_39">
@@ -1354,8 +1365,9 @@
 	<div onclick="playSound('Gmaj_keyD')" id="DIV_48">
 	<p>GM</p>
     </div>
-	<div id="DIV_49">
-	</div>
+	<div onclick="playSound('Dmaj_keyA')" id="DIV_49">
+	<p>DM</p>
+    </div>
 	<div id="DIV_50">
 	</div>
 	<div id="DIV_51">
@@ -1381,8 +1393,9 @@
 	<div onclick="playSound('F#min_keyD')" id="DIV_60">
 	<p>f#m</p>
     </div>
-	<div id="DIV_61">
-	</div>
+	<div onclick="playSound('C#min_KeyA')" id="DIV_61">
+	<p>c#m</p>
+    </div>
 	<div id="DIV_62">
 	</div>
 	<div id="DIV_63">
@@ -1408,8 +1421,9 @@
 	<div onclick="playSound('Emin_keyD')" id="DIV_72">
 	<p>em</p>
     </div>
-	<div id="DIV_73">
-	</div>
+	<div onclick="playSound('Bmin_KeyA')" id="DIV_73">
+	<p>bm</p>
+    </div>
 	<div id="DIV_74">
 	</div>
 	<div id="DIV_75">
@@ -1435,8 +1449,8 @@
 	<div onclick="playSound('Dmaj_keyD')" id="DIV_84">
 	<p>DM</p>
     </div>
-	<div id="DIV_85">
-	
+	<div onclick="playSound('Amaj_KeyA')" id="DIV_85">
+	<p>AM</p>
     </div>
 </div>
         
