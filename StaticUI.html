@@ -1242,6 +1242,24 @@
                createjs.Sound.registerSound("./audio/KeyA/Emaj_KeyA.mp3", "Emaj_KeyA");
                createjs.Sound.registerSound("./audio/KeyA/F%23min_KeyA.mp3", "F#min_KeyA");
                createjs.Sound.registerSound("./audio/KeyA/G%23dim_KeyA.mp3", "G#dim_KeyA");
+               // load Key of E
+               createjs.Sound.registerSound("./audio/KeyE/Emaj.mp3", "Emaj_KeyE");
+               createjs.Sound.registerSound("./audio/KeyE/F%23min.mp3", "F#min_KeyE");
+               createjs.Sound.registerSound("./audio/KeyE/G%23min.mp3", "G#min_KeyE");
+               createjs.Sound.registerSound("./audio/KeyE/Amaj.mp3", "Amaj_KeyE");
+               createjs.Sound.registerSound("./audio/KeyE/Bmaj.mp3", "Bmaj_KeyE");
+               createjs.Sound.registerSound("./audio/KeyE/C%23min.mp3", "C#min_KeyE");
+               createjs.Sound.registerSound("./audio/KeyE/D%23dim.mp3", "D#dim_KeyE");
+               // load Key of B 
+               createjs.Sound.registerSound("./audio/KeyB/Bmaj.mp3", "Bmaj_KeyB");
+               createjs.Sound.registerSound("./audio/KeyB/C%23min.mp3", "C#min_KeyB");
+               createjs.Sound.registerSound("./audio/KeyB/D%23min.mp3", "D#min_KeyB");
+               createjs.Sound.registerSound("./audio/KeyB/Emaj.mp3", "Emaj_KeyB");
+               createjs.Sound.registerSound("./audio/KeyB/F%23maj.mp3", "F#maj_KeyB");
+               createjs.Sound.registerSound("./audio/KeyB/G%23min.mp3", "G#min_KeyB");
+               createjs.Sound.registerSound("./audio/KeyB/A%23dim.mp3", "A#dim_KeyB");
+               
+               
            }
            
            function playSound(id) {
@@ -1256,10 +1274,12 @@
             
        
     <div id="parent">
-	<div id="DIV_2">
-	</div>
-	<div  id="DIV_3">
-	</div>
+	<div onclick="playSound('D#dim_KeyE')" id="DIV_2">
+	<p>D#min</p>
+    </div>
+	<div onclick="playSound('A#dim_KeyB')"  id="DIV_3">
+	<p>A#dim</p>
+    </div>
 	<div  id="DIV_4">
 	</div>
 	<div id="DIV_5">
@@ -1284,10 +1304,12 @@
 	<div onclick="playSound('G#dim_KeyA')" id="DIV_13">
 	<p>G#dim</p>
     </div>
-	<div id="DIV_14">
-	</div>
-	<div id="DIV_15">
-	</div>
+	<div onclick="playSound('C#min_KeyE')" id="DIV_14">
+	<p>c#m</p>
+    </div>
+	<div onclick="playSound('G#min_KeyB')" id="DIV_15">
+	<p>g#m</p>
+    </div>
 	<div id="DIV_16">
 	</div>
 	<div id="DIV_17">
@@ -1312,10 +1334,12 @@
 	<div onclick="playSound('F#min_KeyA')" id="DIV_25">
 	<p>f#m</p>
     </div>
-	<div id="DIV_26">
-	</div>
-	<div id="DIV_27">
-	</div>
+	<div onclick="playSound('Bmaj_KeyE')" id="DIV_26">
+	<p>BM</p>
+    </div>
+	<div onclick="playSound('F#maj_KeyB')" id="DIV_27">
+	<p>F#M</p>
+    </div>
 	<div id="DIV_28">
 	</div>
 	<div id="DIV_29">
@@ -1340,10 +1364,12 @@
 	<div onclick="playSound('Emaj_KeyA')" id="DIV_37">
 	<p>EM</p>
     </div>
-	<div id="DIV_38">
-	</div>
-	<div id="DIV_39">
-	</div>
+	<div onclick="playSound('Amaj_KeyE')" id="DIV_38">
+	<p>AM</p>
+    </div>
+	<div onclick="playSound('Emaj_KeyB')" id="DIV_39">
+	<p>EM</p>
+    </div>
 	<div id="DIV_40">
 	</div>
 	<div id="DIV_41">
@@ -1368,10 +1394,12 @@
 	<div onclick="playSound('Dmaj_KeyA')" id="DIV_49">
 	<p>DM</p>
     </div>
-	<div id="DIV_50">
-	</div>
-	<div id="DIV_51">
-	</div>
+	<div onclick="playSound('G#min_KeyE')" id="DIV_50">
+	<p>g#m</p>
+    </div>
+	<div onclick="playSound('D#min_KeyB')" id="DIV_51">
+	<p>d#m</p>
+    </div>
 	<div id="DIV_52">
 	</div>
 	<div id="DIV_53">
@@ -1396,10 +1424,12 @@
 	<div onclick="playSound('C#min_KeyA')" id="DIV_61">
 	<p>c#m</p>
     </div>
-	<div id="DIV_62">
-	</div>
-	<div id="DIV_63">
-	</div>
+	<div onclick="playSound('F#min_KeyE')" id="DIV_62">
+	<p>f#m</p>
+    </div>
+	<div onclick="playSound('C#min_KeyB')" id="DIV_63">
+	<p>c#m</p>
+    </div>
 	<div id="DIV_64">
 	</div>
 	<div id="DIV_65">
@@ -1424,10 +1454,12 @@
 	<div onclick="playSound('Bmin_KeyA')" id="DIV_73">
 	<p>bm</p>
     </div>
-	<div id="DIV_74">
-	</div>
-	<div id="DIV_75">
-	</div>
+	<div onclick="playSound('Emaj_KeyE')" id="DIV_74">
+	<p>EM</p>
+    </div>
+	<div onclick="playSound('Bmaj_KeyB')" id="DIV_75">
+	 <p>BM</p>
+    </div>
 	<div id="DIV_76">
 	</div>
 	<div id="DIV_77">
@@ -1464,7 +1496,7 @@
                     $("[id^='DIV']").hover(
                        function(){
                           // hover code
-                          $( this ).css("background-color", "#88A");
+                          $( this ).css("background-color", "#88C");
                        }, function(){
                           // unhover code 
                           $( this ).css("background-color", "#555");  
