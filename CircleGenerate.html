@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Generate circles on a circular path</title>
+</head>
+<body>
+<div id="parentdiv"></div>
+<style type="text/css">
+    
+    #parentdiv {
+        position: relative;
+        margin: 25% auto;
+        width: 6em; 
+        height: 6em; 
+        border-radius: 100%; 
+        
+        
+        }
+
+    .div2
+    {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #555;
+        border-radius: 100px;
+    }
+</style>
+
+<script>
+    
+    function makeCircles(quantity, distance, size){
+        var div = 360 / quantity; //number of circles to make
+        var radius = distance; 
+        var parentdiv = document.getElementById('parentdiv'); 
+        var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2);  
+        var offsetToChildCenter = size / 2; 
+        var totalOffset = offsetToParentCenter - offsetToChildCenter; 
+        
+        for (var i = 1; i <= quantity; ++i){
+    
+        var childdiv = document.createElement('div'); // create div element to use
+        childdiv.className = 'div2';  // add class of div2 
+        childdiv.style.position = 'absolute'; // CSS to position: absolute
+        childdiv.style.width = size + "px"; 
+        childdiv.style.height = size + "px";             
+        var radians = Math.PI /180;   
+        var y = Math.sin((div * i) * radians) * radius;
+        var x = Math.cos((div * i) * radians) * radius;
+        childdiv.style.top = (y + totalOffset).toString() + "px";   // position of y coordinate with offset added 
+        childdiv.style.left = (x + totalOffset).toString() + "px"; // position of x  coordinate with offset added 
+        parentdiv.appendChild(childdiv);
+        }
+    }
+    
+   
+    
+   function circleOfFifths(num,distance){
+       for(var i = 1; i <= num; i++){
+            debugger
+           distance = distance + 40; 
+           var size = (i+6)* 3; 
+           makeCircles(12,distance,size);
+       }
+   }
+       circleOfFifths(7,10); 
+        
+</script>
+</body>
+</html>
