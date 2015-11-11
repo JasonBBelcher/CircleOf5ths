@@ -14,6 +14,8 @@ click around on the UI and hear the relationship of key signatures to one anothe
 
 *  refactor css 
 *  Label all divs with correct note/chord
+*  some kind of switch to select between click/mouseover behavior.  
+*  add extra sound assets with a way to select between them.  Default is organ.  
 
 
  
